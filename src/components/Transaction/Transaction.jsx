@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Transaction = ({
   transactionType,
   transactionAmount,
@@ -10,4 +12,10 @@ export const Transaction = ({
       <td>{transactionCurrency}</td>
     </tr>
   );
+};
+
+Transaction.propTypes = {
+  transactionType: PropTypes.string.isRequired,
+  transactionAmount: PropTypes.string.isRequired,
+  transactionCurrency: PropTypes.string.isRequired,
 };
