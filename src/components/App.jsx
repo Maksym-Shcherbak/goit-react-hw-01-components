@@ -14,10 +14,11 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column',
         gap: '15px',
         fontSize: 40,
         color: '#010101',

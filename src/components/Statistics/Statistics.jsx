@@ -1,5 +1,5 @@
 import css from './Statistics.module.css';
-import { getRandomHexColor } from './getRandomColor';
+import { getRandomHexColor } from '../../functions/getRandomColor';
 
 export const Statistics = ({ title, stats }) => {
   return (

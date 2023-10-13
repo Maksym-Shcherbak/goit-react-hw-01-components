@@ -1,4 +1,4 @@
-import { FriendListItem } from './FriendListItem';
+import { FriendListItem } from '../FriendListItem/FriendListItem';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -7,7 +7,7 @@ export const FriendList = ({ friends }) => {
         return (
           <FriendListItem
             key={friend.id}
-            status={friend.isOnline}
+            isOnline={friend.isOnline}
             imgSrc={friend.avatar}
             friendName={friend.name}
           />
