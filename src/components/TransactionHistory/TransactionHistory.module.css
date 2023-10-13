@@ -1,0 +1,82 @@
+.transactionHistory {
+  width: 400px;
+  height: 300px;
+  border-collapse: collapse;
+  overflow: hidden;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.transactionHistory th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.transactionHistory th {
+  text-align: left;
+}
+
+.transactionHistory thead th {
+  background-color: #55608f;
+}
+
+.transactionHistory tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.transactionHistory tbody td {
+  position: relative;
+}
+
+.transactionHistory tbody td::before {
+  display: none;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.transactionHistory tbody td:hover::before {
+  display: block;
+}
+
+/* .transactionHistory tbody td:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+} */
+
+/* tbody {
+  tr {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  td {
+    position: relative;
+    &:hover {
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9999px;
+        bottom: -9999px;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: -1;
+      }
+    }
+  }
+} */
